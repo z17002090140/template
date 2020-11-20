@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://114.55.137.105:3306/student?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: Admin-123
+server:
+  port: 8081
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: isDel
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+logging:
+  level:
+    root: info
+    com.example: debug
+  file:
+    name: log/dev.log

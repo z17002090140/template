@@ -1,0 +1,119 @@
+2020-11-20 10:49:52.658  INFO 4644 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-O0GUM1U with PID 4644 (E:\Study\ExampleDemo\target\classes started by 25476 in E:\Study\ExampleDemo)
+2020-11-20 10:49:52.660 DEBUG 4644 --- [main] com.example.demo.DemoApplication         : Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-20 10:49:52.661  INFO 4644 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-11-20 10:49:56.584  INFO 4644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-20 10:49:56.607  INFO 4644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 10:49:56.607  INFO 4644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-20 10:49:56.612  INFO 4644 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-11-20 10:49:56.613  INFO 4644 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-11-20 10:49:56.613  INFO 4644 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-11-20 10:49:56.619  INFO 4644 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-11-20 10:49:56.830  INFO 4644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 10:49:56.833  INFO 4644 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4046 ms
+2020-11-20 10:49:59.078  INFO 4644 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-20 10:49:59.429  INFO 4644 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 10:50:00.031  INFO 4644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-20 10:50:00.034  INFO 4644 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-20 10:50:00.059  INFO 4644 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-20 10:50:00.170  INFO 4644 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-20 10:50:00.552  INFO 4644 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 8.762 seconds (JVM running for 10.556)
+2020-11-20 10:50:06.345  INFO 4644 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 10:50:06.346  INFO 4644 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-20 10:50:06.388  INFO 4644 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 42 ms
+2020-11-20 10:50:06.665  INFO 4644 --- [http-nio-8081-exec-1] c.e.d.common.plugin.LogAspect.LogAspect  : Request : {url='http://localhost:8081/add', ip='0:0:0:0:0:0:0:1', classMethod='com.example.demo.controller.StudentController.addStudent', args=[Student(id=null, name=小昊, age=18)]}
+2020-11-20 10:50:07.212  INFO 4644 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-20 10:50:08.326  INFO 4644 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-20 10:50:08.343 DEBUG 4644 --- [http-nio-8081-exec-1] c.e.demo.mapper.StudentMapper.insert     : ==>  Preparing: INSERT INTO student ( id, name, age, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? ) 
+2020-11-20 10:50:08.391 DEBUG 4644 --- [http-nio-8081-exec-1] c.e.demo.mapper.StudentMapper.insert     : ==> Parameters: 1329617992608149506(Long), 小昊(String), 18(Integer), null, null
+2020-11-20 10:51:02.170  INFO 4644 --- [http-nio-8081-exec-3] c.e.d.common.plugin.LogAspect.LogAspect  : Request : {url='http://localhost:8081/add', ip='0:0:0:0:0:0:0:1', classMethod='com.example.demo.controller.StudentController.addStudent', args=[Student(id=null, name=小昊, age=18)]}
+2020-11-20 10:51:02.192 DEBUG 4644 --- [http-nio-8081-exec-3] c.e.demo.mapper.StudentMapper.insert     : ==>  Preparing: INSERT INTO student ( id, name, age, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? ) 
+2020-11-20 10:51:02.194 DEBUG 4644 --- [http-nio-8081-exec-3] c.e.demo.mapper.StudentMapper.insert     : ==> Parameters: 1329618222929965057(Long), 小昊(String), 18(Integer), null, null
+2020-11-20 10:51:02.235 DEBUG 4644 --- [http-nio-8081-exec-3] c.e.demo.mapper.StudentMapper.insert     : <==    Updates: 1
+2020-11-20 10:51:02.236  INFO 4644 --- [http-nio-8081-exec-3] c.e.d.common.plugin.LogAspect.LogAspect  : Result : ServerResponse(errorCode=200, msg=成功, serverTime=2020-11-20 10:51:02, data=null)
+2020-11-20 10:53:15.314  INFO 14888 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-O0GUM1U with PID 14888 (E:\Study\ExampleDemo\target\classes started by 25476 in E:\Study\ExampleDemo)
+2020-11-20 10:53:15.315 DEBUG 14888 --- [main] com.example.demo.DemoApplication         : Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-20 10:53:15.316  INFO 14888 --- [main] com.example.demo.DemoApplication         : The following profiles are active: dev
+2020-11-20 10:53:16.631  INFO 14888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-20 10:53:16.638  INFO 14888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 10:53:16.639  INFO 14888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-20 10:53:16.640  INFO 14888 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-11-20 10:53:16.640  INFO 14888 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-11-20 10:53:16.640  INFO 14888 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-11-20 10:53:16.643  INFO 14888 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-11-20 10:53:16.719  INFO 14888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 10:53:16.720  INFO 14888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1332 ms
+2020-11-20 10:53:17.419  INFO 14888 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-20 10:53:17.565  INFO 14888 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 10:53:17.803  INFO 14888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-20 10:53:17.804  INFO 14888 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-20 10:53:17.813  INFO 14888 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-20 10:53:17.840  INFO 14888 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-20 10:53:17.992  INFO 14888 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.98 seconds (JVM running for 4.113)
+2020-11-20 10:53:28.929  INFO 14888 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 10:53:28.930  INFO 14888 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-20 10:53:28.941  INFO 14888 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-11-20 10:53:29.023  INFO 14888 --- [http-nio-8081-exec-1] c.e.d.common.plugin.LogAspect.LogAspect  : Request : {url='http://localhost:8081/add', ip='0:0:0:0:0:0:0:1', classMethod='com.example.demo.controller.StudentController.addStudent', args=[Student(id=null, name=小昊, age=18)]}
+2020-11-20 10:53:29.300  INFO 14888 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-20 10:53:30.324  INFO 14888 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-20 10:53:30.346 DEBUG 14888 --- [http-nio-8081-exec-1] c.e.demo.mapper.StudentMapper.insert     : ==>  Preparing: INSERT INTO student ( id, name, age, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? ) 
+2020-11-20 10:53:30.399 DEBUG 14888 --- [http-nio-8081-exec-1] c.e.demo.mapper.StudentMapper.insert     : ==> Parameters: 1329618840214110210(Long), 小昊(String), 18(Integer), null, null
+2020-11-20 10:53:30.444 DEBUG 14888 --- [http-nio-8081-exec-1] c.e.demo.mapper.StudentMapper.insert     : <==    Updates: 1
+2020-11-20 10:53:30.448  INFO 14888 --- [http-nio-8081-exec-1] c.e.d.common.plugin.LogAspect.LogAspect  : Result : ServerResponse(errorCode=200, msg=成功, serverTime=2020-11-20 10:53:30, data=null)
+2020-11-20 10:54:38.901  INFO 8696 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-O0GUM1U with PID 8696 (E:\Study\ExampleDemo\target\classes started by 25476 in E:\Study\ExampleDemo)
+2020-11-20 10:54:38.903 DEBUG 8696 --- [main] com.example.demo.DemoApplication         : Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-20 10:54:38.903  INFO 8696 --- [main] com.example.demo.DemoApplication         : The following profiles are active: dev
+2020-11-20 10:54:40.457  INFO 8696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-20 10:54:40.464  INFO 8696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 10:54:40.465  INFO 8696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-20 10:54:40.466  INFO 8696 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-11-20 10:54:40.466  INFO 8696 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-11-20 10:54:40.466  INFO 8696 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-11-20 10:54:40.469  INFO 8696 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-11-20 10:54:40.542  INFO 8696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 10:54:40.542  INFO 8696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1579 ms
+2020-11-20 10:54:41.233  INFO 8696 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-20 10:54:41.371  INFO 8696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 10:54:41.608  INFO 8696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-20 10:54:41.609  INFO 8696 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-20 10:54:41.616  INFO 8696 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-20 10:54:41.642  INFO 8696 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-20 10:54:41.767  INFO 8696 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 3.223 seconds (JVM running for 3.895)
+2020-11-20 10:54:53.286  INFO 8696 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 10:54:53.287  INFO 8696 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-20 10:54:53.305  INFO 8696 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-11-20 10:54:53.384  INFO 8696 --- [http-nio-8081-exec-2] c.e.d.common.plugin.LogAspect.LogAspect  : Request : {url='http://localhost:8081/add', ip='0:0:0:0:0:0:0:1', classMethod='com.example.demo.controller.StudentController.addStudent', args=[Student(id=null, name=小波, age=18)]}
+2020-11-20 10:54:53.799  INFO 8696 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-20 10:54:54.823  INFO 8696 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-20 10:54:54.840 DEBUG 8696 --- [http-nio-8081-exec-2] c.e.demo.mapper.StudentMapper.insert     : ==>  Preparing: INSERT INTO student ( id, name, age, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? ) 
+2020-11-20 10:54:54.893 DEBUG 8696 --- [http-nio-8081-exec-2] c.e.demo.mapper.StudentMapper.insert     : ==> Parameters: 1329619194624344065(Long), 小波(String), 18(Integer), null, null
+2020-11-20 10:54:54.941 DEBUG 8696 --- [http-nio-8081-exec-2] c.e.demo.mapper.StudentMapper.insert     : <==    Updates: 1
+2020-11-20 10:54:54.948  INFO 8696 --- [http-nio-8081-exec-2] c.e.d.common.plugin.LogAspect.LogAspect  : Result : ServerResponse(errorCode=200, msg=成功, serverTime=2020-11-20 10:54:54, data=null)
+2020-11-20 10:55:31.186  INFO 10524 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-O0GUM1U with PID 10524 (E:\Study\ExampleDemo\target\classes started by 25476 in E:\Study\ExampleDemo)
+2020-11-20 10:55:31.196 DEBUG 10524 --- [main] com.example.demo.DemoApplication         : Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-20 10:55:31.197  INFO 10524 --- [main] com.example.demo.DemoApplication         : The following profiles are active: dev
+2020-11-20 10:55:32.666  INFO 10524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-20 10:55:32.672  INFO 10524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 10:55:32.672  INFO 10524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-20 10:55:32.673  INFO 10524 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-11-20 10:55:32.674  INFO 10524 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-11-20 10:55:32.674  INFO 10524 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-11-20 10:55:32.677  INFO 10524 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-11-20 10:55:32.752  INFO 10524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 10:55:32.754  INFO 10524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1484 ms
+2020-11-20 10:55:33.453  INFO 10524 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-20 10:55:33.606  INFO 10524 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 10:55:33.858  INFO 10524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-20 10:55:33.859  INFO 10524 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-20 10:55:33.867  INFO 10524 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-20 10:55:33.896  INFO 10524 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-20 10:55:34.023  INFO 10524 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 3.325 seconds (JVM running for 4.097)
+2020-11-20 10:55:38.022  INFO 10524 --- [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 10:55:38.023  INFO 10524 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-20 10:55:38.032  INFO 10524 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-11-20 10:55:38.127  INFO 10524 --- [http-nio-8081-exec-3] c.e.d.common.plugin.LogAspect.LogAspect  : Request : {url='http://localhost:8081/add', ip='0:0:0:0:0:0:0:1', classMethod='com.example.demo.controller.StudentController.addStudent', args=[Student(id=null, name=小波, age=18)]}
+2020-11-20 10:55:38.463  INFO 10524 --- [http-nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-20 10:55:39.417  INFO 10524 --- [http-nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-20 10:55:39.437 DEBUG 10524 --- [http-nio-8081-exec-3] c.e.demo.mapper.StudentMapper.insert     : ==>  Preparing: INSERT INTO student ( id, name, age, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? ) 
+2020-11-20 10:55:39.509 DEBUG 10524 --- [http-nio-8081-exec-3] c.e.demo.mapper.StudentMapper.insert     : ==> Parameters: 1329619381975592962(Long), 小波(String), 18(Integer), 2020-11-20 10:55:38.456(Timestamp), 2020-11-20 10:55:38.456(Timestamp)
+2020-11-20 10:55:39.544 DEBUG 10524 --- [http-nio-8081-exec-3] c.e.demo.mapper.StudentMapper.insert     : <==    Updates: 1
+2020-11-20 10:55:39.548  INFO 10524 --- [http-nio-8081-exec-3] c.e.d.common.plugin.LogAspect.LogAspect  : Result : ServerResponse(errorCode=200, msg=成功, serverTime=2020-11-20 10:55:39, data=null)
